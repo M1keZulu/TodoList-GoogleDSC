@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo</title>
-    <link rel="stylesheet" type="text/css" href="css\todo.css">
+    <link rel="icon" href="t-icon-20.jpg.png">
+
+    <link rel="stylesheet" type="text/css" href="todo.css">
 </head>
 <body>
 
@@ -14,11 +16,11 @@
         <button type="text" id="addTask" onclick="add()">Add</button>
     </div>
     
-    <ul id="list">
-        <li>Upload Google DSC Assignment</li>
+    <ul id="in_list">
+        <li>Upload Google DSC Assignment<span class="click" onclick="remove(this)">X</span> </li>
     </ul>
 
-    <script type="text/javascript" src="js\todo.js"></script>
+    <script type="text/javascript" src="todo.js"></script>
 
 </body>
 </html>
