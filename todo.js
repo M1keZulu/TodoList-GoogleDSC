@@ -6,5 +6,5 @@ function add(){
 }
 
 function remove(task){
-    task.parentElement.style.display = "none";
+    task.parentElement.style.textDecoration = "line-through";
 }
