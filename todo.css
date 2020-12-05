@@ -1,0 +1,38 @@
+.click{
+    font-weight: bold;
+    position: absolute;
+    left: 300px;
+}
+
+.remove{
+    color: red;
+    position: absolute;
+    left: 320px;
+    font-size: 15px;
+}
+
+.fade-in{
+    animation: fadein 2s;
+}
+
+.fade-out{
+    animation: fadeout 2s;
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
