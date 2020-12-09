@@ -2,12 +2,12 @@ var input_list = document.getElementById('newTask');
 var mylist = document.getElementById('in_list');
 
 function add(){
-    mylist.insertAdjacentHTML('beforeend', '<li class="fade-in">' + input_list.value + '<span class="click" onclick="strike(this)">X</span> <span class="remove" onclick="remove(this)">remove</span></li>');
+    mylist.insertAdjacentHTML('beforeend', '<li class="fade-in" onclick=strike(this)>' + input_list.value + '<span class="remove" onclick="remove(this)">X</span></li>');
     input_list.value = ""
 }
 
 function strike(task){
-    task.parentElement.style.textDecoration = "line-through";
+    task.style.textDecoration = "line-through";
 }
 
 function remove(task){

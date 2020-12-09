@@ -15,11 +15,18 @@
 
 .fade-in{
     animation: fadein 2s;
+    cursor: pointer;
+}
+
+.fade-in:hover{
+    color: grey;
+    text-decoration: line-through;
 }
 
 .fade-out{
     animation: fadeout 2s;
 }
+
 
 @keyframes fadein{
     from{
